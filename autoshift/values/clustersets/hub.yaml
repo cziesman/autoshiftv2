@@ -263,7 +263,7 @@ hubClusterSets:
       odf-noobaa-pvpool: ''
       odf-noobaa-store-size: ''
       odf-noobaa-store-num-volumes: ''
-      odf-ocs-storage-class-name: 'ocs-external-storagecluster-ceph-rbd'
+      odf-ocs-storage-class-name: 'ocs-storagecluster-ceph-rbd'
       odf-ocs-storage-size: '2Ti'
       odf-ocs-storage-count: '2'
       odf-ocs-storage-replicas: '3'
