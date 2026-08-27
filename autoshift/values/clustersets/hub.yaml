@@ -268,7 +268,7 @@ hubClusterSets:
       odf-ocs-storage-count: '2'
       odf-ocs-storage-replicas: '3'
       odf-resource-profile: balanced
-      odf-channel: stable-4.22
+      odf-channel: stable-4.20
       odf-source: redhat-operators
       odf-source-namespace: openshift-marketplace
       odf-default-storageclass: ocs-storagecluster-ceph-rbd
