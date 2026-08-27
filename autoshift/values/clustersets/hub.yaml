@@ -192,7 +192,7 @@ hubClusterSets:
       master-kube-reserved-cpu: '500m'
       master-eviction-memory: '500Mi'
       ### Infrastructure Nodes
-      infra-nodes: '3'
+      infra-nodes: ''
       infra-nodes-provider: aws
       infra-nodes-instance-type: 'm5.2xlarge'
       infra-nodes-numcpu: ''
