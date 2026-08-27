@@ -1,39 +1,46 @@
-*.swp
-.vscode
-*.swo
-.DS_Store
-# CLAUDE.md and AGENTS.md are committed. Personal instructions go in CLAUDE.local.md,
-# which Claude Code loads automatically alongside CLAUDE.md.
-CLAUDE.local.md
-pull-secret.txt
-pull-secret.json
-imageset*.yaml
-.claude
-.claude/*
-autoshift/files/
-.helm-charts/
-release-artifacts/
-.cache/
-.tools/
-.tmp/
-.mcp.json
-.tmp
-.tmp/*
-local/
-memory
+target/
+.mvn/
+**/src/main/**/target/
+**/src/main/resources/keystore/
+**/src/test/**/target/
 
-# kustomize --enable-helm pulls remote charts into a local charts/ cache next to the
-# kustomization (e.g. a direct `kustomize build` of a policy using helmCharts with repo:).
-# The e2e/release renders use temp dirs; this only appears on a direct in-tree render.
-policies/**/charts/
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
-# Vale styles are downloaded by `vale sync` from the package declared in .vale.ini — a build
-# dependency, not source. The vocabulary under .vale/styles/config/ IS ours and is tracked.
-.vale/styles/*
-!.vale/styles/config/
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
 
-# Zensical build output. Written next to the config because docs_dir is the repo root.
-/site/
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# Zensical build cache.
-.zensical/
+### VS Code ###
+.vscode/
+
+**/application-stage.yaml
+**/application-dev.yaml
+**/application-dev-secure.yaml
+**/application-dev-novault.yaml
+**/application-dev-vault.yaml
+**/application-local.yaml
+
+/tomcat
+
+/db
+/nb-configuration.xml
+/licenseheader.txt
