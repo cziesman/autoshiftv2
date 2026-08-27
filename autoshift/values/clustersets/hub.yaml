@@ -220,7 +220,7 @@ hubClusterSets:
       worker-kube-reserved-cpu: '250m'
       worker-eviction-memory: '500Mi'
       ### Storage Nodes
-      storage-nodes: '3'
+      storage-nodes: ''
       # storage-nodes-zone-1: 'us-east-2a'
       # storage-nodes-zone-2: 'us-east-2b'
       # storage-nodes-zone-3: 'us-east-2c'
