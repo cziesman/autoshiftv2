@@ -304,7 +304,7 @@ hubClusterSets:
       dev-spaces-source: redhat-operators
       dev-spaces-source-namespace: openshift-marketplace
       ### Developer Hub
-      dev-hub: 'true'
+      dev-hub: 'false'
       dev-hub-subscription-name: rhdh
       # dev-hub-version: 'rhdh-operator.v1.10.3'
       dev-hub-channel: fast-1.10
