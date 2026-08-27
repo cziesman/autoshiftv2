@@ -30,7 +30,7 @@ gitops:
     statusProcessors: 20        # concurrent status reconciliations (default: 20)
     operationProcessors: 10     # concurrent sync operations (default: 10)
     limits:
-      cpu: 2000m
+      cpu: 1000m
       memory: 6Gi
     requests:
       cpu: 250m
