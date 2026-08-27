@@ -4,7 +4,7 @@
 apiVersion: ocs.openshift.io/v1
 kind: StorageCluster
 metadata:
-  name: ocs-storagecluster
+  name: ocs-external-storagecluster
   namespace: openshift-storage
 status:
   conditions:
