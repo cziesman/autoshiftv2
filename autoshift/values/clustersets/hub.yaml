@@ -263,7 +263,7 @@ hubClusterSets:
       odf-noobaa-pvpool: ''
       odf-noobaa-store-size: ''
       odf-noobaa-store-num-volumes: ''
-      odf-ocs-storage-class-name: 'ocs-storagecluster-ceph-rbd'
+      odf-ocs-storage-class-name: 'ocs-external-storagecluster-ceph-rbd'
       odf-ocs-storage-size: '2Ti'
       odf-ocs-storage-count: '2'
       odf-ocs-storage-replicas: '3'
@@ -281,7 +281,7 @@ hubClusterSets:
       # imageregistry-s3-region: us-east-2
       imageregistry-pvc-access-mode: ReadWriteMany
       imageregistry-pvc-size: 100Gi
-      imageregistry-pvc-storage-class: ocs-storagecluster-ceph-rbd
+      imageregistry-pvc-storage-class: ocs-external-storagecluster-ceph-rbd
       imageregistry-pvc-volume-mode: Block
       imageregistry-rollout-strategy: RollingUpdate
       ### Kubernetes NMState Operator
