@@ -88,7 +88,7 @@ managedClusterSets:
       odf-noobaa-pvpool: ''
       odf-noobaa-store-size: ''
       odf-noobaa-store-num-volumes: ''
-      odf-ocs-storage-class-name: gp3-csi
+      odf-ocs-storage-class-name: ocs-external-storagecluster-cephfs
       odf-ocs-storage-size: ''
       odf-ocs-storage-count: ''
       odf-ocs-storage-replicas: ''
@@ -152,7 +152,7 @@ managedClusterSets:
       loki-source: redhat-operators
       loki-source-namespace: openshift-marketplace
       loki-size: 1x.extra-small
-      loki-storageclass: gp3-csi
+      loki-storageclass: ocs-external-storagecluster-cephfs
       loki-lokistack-name: logging-lokistack
       ### OpenShift Logging
       logging: 'true'

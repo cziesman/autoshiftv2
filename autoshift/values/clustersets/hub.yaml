@@ -276,7 +276,7 @@ hubClusterSets:
       odf-noobaa-pvpool: ''
       odf-noobaa-store-size: ''
       odf-noobaa-store-num-volumes: ''
-      odf-ocs-storage-class-name: 'ocs-external-storagecluster-ceph-rbd'
+      odf-ocs-storage-class-name: 'ocs-external-storagecluster-cephfs'
       odf-ocs-storage-size: '2Ti'
       odf-ocs-storage-count: '2'
       odf-ocs-storage-replicas: '3'
@@ -284,7 +284,7 @@ hubClusterSets:
       odf-channel: stable-4.20
       odf-source: redhat-operators
       odf-source-namespace: openshift-marketplace
-      odf-default-storageclass: ocs-external-storagecluster-ceph-rbd
+      odf-default-storageclass: ocs-external-storagecluster-cephfs
       odf-csi-all-nodes: 'true'            # 'true' to run CSI plugins on all nodes (masters, infra, storage)
       ### OpenShift Internal Registry
       imageregistry: 'true'
@@ -294,7 +294,7 @@ hubClusterSets:
       # imageregistry-s3-region: us-east-2
       imageregistry-pvc-access-mode: ReadWriteMany
       imageregistry-pvc-size: 100Gi
-      imageregistry-pvc-storage-class: ocs-external-storagecluster-ceph-rbd
+      imageregistry-pvc-storage-class: ocs-external-storagecluster-cephfs
       imageregistry-pvc-volume-mode: Block
       imageregistry-rollout-strategy: RollingUpdate
       ### Kubernetes NMState Operator
@@ -357,7 +357,7 @@ hubClusterSets:
       loki-source: redhat-operators
       loki-source-namespace: openshift-marketplace
       loki-size: 1x.extra-small
-      loki-storageclass: gp3-csi
+      loki-storageclass: ocs-external-storagecluster-cephfs
       loki-lokistack-name: logging-lokistack
       ### OpenShift Logging
       logging: 'true'

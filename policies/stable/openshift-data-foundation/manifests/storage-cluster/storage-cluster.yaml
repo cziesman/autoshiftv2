@@ -24,7 +24,7 @@ object-templates-raw: |
                 resources:
                   requests:
                     storage: '{{hub index .ManagedClusterLabels "autoshift.io/odf-ocs-storage-size" | default "2Ti" hub}}'
-                storageClassName: '{{hub index .ManagedClusterLabels "autoshift.io/odf-ocs-storage-class-name" | default "gp3-csi" hub}}'
+                storageClassName: '{{hub index .ManagedClusterLabels "autoshift.io/odf-ocs-storage-class-name" | default "ocs-external-storagecluster-cephfs" hub}}'
                 {{hub- end hub}}
                 volumeMode: Block
               status: {}
