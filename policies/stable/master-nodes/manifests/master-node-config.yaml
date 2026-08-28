@@ -24,7 +24,9 @@ object-templates-raw: |
           matchLabels:
             pools.operator.machineconfiguration.openshift.io/master: ""
         kubeletConfig:
+          {{- if gt $cores 0 }}
           podsPerCore: {{ add 1 (div $maxPods $cores) }}
+          {{- end }}
           maxPods: {{ $maxPods }}
           systemReserved:
             memory: {{ $systemReservedMemory }}
