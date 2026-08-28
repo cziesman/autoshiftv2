@@ -167,13 +167,13 @@ clusters:
       # =======================================================================
       odf-multi-cloud-gateway: standard
       # odf-ocs-storage-class-name: 'gp3-csi'
-      odf-ocs-storage-class-name: 'ocs-storagecluster-ceph-rbd'
+      odf-ocs-storage-class-name: 'ocs-external-storagecluster-ceph-rbd'
       odf-ocs-storage-size: '2Ti'
       odf-ocs-storage-count: '2'
       odf-ocs-storage-replicas: '3'
       odf-ocs-flexible-scaling: 'true'
       odf-resource-profile: balanced
-      odf-default-storageclass: 'ocs-storagecluster-ceph-rbd'
+      odf-default-storageclass: 'ocs-external-storagecluster-ceph-rbd'
       odf-csi-all-nodes: 'false'            # 'true' to run CSI plugins on all nodes (masters, infra, storage)
 
       # =======================================================================
@@ -181,14 +181,14 @@ clusters:
       # =======================================================================
       compliance-auto-remediate: 'true'
       # compliance-storage-class: 'gp3-csi'   # StorageClass for compliance scan results
-      compliance-storage-class: 'ocs-storagecluster-ceph-rbd'
+      compliance-storage-class: 'ocs-external-storagecluster-ceph-rbd'
 
       # =======================================================================
       # Loki Sizing
       # =======================================================================
       loki-size: 1x.extra-small
       # loki-storageclass: gp3-csi
-      loki-storageclass: 'ocs-storagecluster-ceph-rbd'
+      loki-storageclass: 'ocs-external-storagecluster-ceph-rbd'
 
       # =======================================================================
       # GitLab Per-Cluster Overrides
