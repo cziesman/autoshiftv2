@@ -20,7 +20,7 @@
 # ==============================================================================
 
 clusters:
-  my-cluster-name:    # <-- Must match the cluster name in ACM
+  dev-example:    # <-- Must match the cluster name in ACM
     config:
       # =====================================================================
       # Cluster ownership / clusterset assignment (declarative, optional)
@@ -166,26 +166,26 @@ clusters:
       # ODF Sizing
       # =======================================================================
       odf-multi-cloud-gateway: standard
-      odf-ocs-storage-class-name: 'gp3-csi'
+      odf-ocs-storage-class-name: 'ocs-external-storagecluster-cephfs'
       odf-ocs-storage-size: '2Ti'
       odf-ocs-storage-count: '2'
       odf-ocs-storage-replicas: '3'
       odf-ocs-flexible-scaling: 'true'
       odf-resource-profile: balanced
-      odf-default-storageclass: 'ocs-storagecluster-ceph-rbd'
+      odf-default-storageclass: 'ocs-external-storagecluster-cephfs'
       odf-csi-all-nodes: 'false'            # 'true' to run CSI plugins on all nodes (masters, infra, storage)
 
       # =======================================================================
       # Compliance Config
       # =======================================================================
       compliance-auto-remediate: 'true'
-      compliance-storage-class: 'gp3-csi'   # StorageClass for compliance scan results
+      compliance-storage-class: 'ocs-external-storagecluster-cephfs'   # StorageClass for compliance scan results
 
       # =======================================================================
       # Loki Sizing
       # =======================================================================
       loki-size: 1x.extra-small
-      loki-storageclass: gp3-csi
+      loki-storageclass: ocs-external-storagecluster-cephfs
 
       # =======================================================================
       # GitLab Per-Cluster Overrides
