@@ -49,7 +49,10 @@ policyGenerator: true
 # Optional: Policies excluded from the ApplicationSet. cluster-labels and cluster-config-maps are deployed
 # as dedicated Applications with full label/config data to avoid sizing issues and are excluded already
 excludePolicies:
+  - policy-storage-nodes-baremetal
   - policy-storage-nodes-test
+  - policy-storage-cluster
+
 #   - infra-nodes
 #   - worker-nodes
 
