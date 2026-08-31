@@ -50,6 +50,7 @@ policyGenerator: true
 # as dedicated Applications with full label/config data to avoid sizing issues and are excluded already
 excludePolicies:
   - storage-nodes
+  - openshift-data-foundation
 
 #   - infra-nodes
 #   - worker-nodes
