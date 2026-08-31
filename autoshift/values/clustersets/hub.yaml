@@ -144,7 +144,7 @@ hubClusterSets:
       servicemesh3operator-source-namespace: openshift-marketplace
       # servicemesh3operator-version: 'servicemeshoperator3.v3.4.1'
       ### Servicemesh3 Ambient
-      servicemesh3-ambient: 'true'
+      servicemesh3-ambient: 'false'
       ### OpenTelemetry
       opentelemetry: 'false'
       opentelemetry-subscription-name: opentelemetry-product
