@@ -37,7 +37,7 @@ managedClusterSets:
       servicemesh3operator-source: redhat-operators
       servicemesh3operator-source-namespace: openshift-marketplace
       servicemesh3operator-version: 'servicemeshoperator3.v3.4.1'
-      servicemesh3-ambient: 'true'
+      servicemesh3-ambient: 'false'
       ### OpenTelemetry (required by servicemesh3-ambient)
       opentelemetry: 'false'
       opentelemetry-subscription-name: opentelemetry-product
@@ -141,7 +141,7 @@ managedClusterSets:
       gitops-channel: gitops-1.21
       gitops-source: redhat-operators
       gitops-source-namespace: openshift-marketplace
-      gitops-dev: 'true'
+      gitops-dev: 'false'
       gitops-dev-team-test: 'hub' #hub or standalone
       # gitops-dev-team-{INSERT_TEAM_NAME}
       ### Loki
