@@ -239,7 +239,7 @@ hubClusterSets:
       # storage-nodes-zone-3: 'us-east-2c'
       # storage-nodes-region: 'us-east-2'
       storage-nodes-instance-type: 'm6in.8xlarge'
-      storage-nodes-provider: aws
+      storage-nodes-provider: baremetal
       # storage-nodes-node-[iterator]: node-1 # For use with baremetal
       # storage-nodes-node-[iterator]: node-2 # For use with baremetal
       storage-nodes-numcpu: ''
